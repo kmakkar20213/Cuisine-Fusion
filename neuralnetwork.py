@@ -26,7 +26,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 import ast
 
-# Converting the string representation of lists into actual lists
+# Converting the string representation of lists into actual lists.
 data['ingredients'] = data['ingredients'].apply(ast.literal_eval)
 
 data['ingredients_text'] = data['ingredients'].apply(lambda x: ' '.join(x))
